@@ -1,0 +1,12 @@
+services:
+  app-prod:
+    build:
+      context: .
+      target: prod
+    container_name: spring-boot-prod-app
+    ports:
+      - 8082:8082
+    volumes:
+      - ./target:/app/target
+    env_file:
+      - .env.prod

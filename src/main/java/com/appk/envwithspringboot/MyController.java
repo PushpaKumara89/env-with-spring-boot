@@ -14,6 +14,6 @@ public class MyController {
     private String greet;
     @GetMapping("/greeting")
     public ResponseEntity<String> getGreeting(){
-        return ResponseEntity.ok(greet);
+        return ResponseEntity.ok(greet+"!");
     }
 }

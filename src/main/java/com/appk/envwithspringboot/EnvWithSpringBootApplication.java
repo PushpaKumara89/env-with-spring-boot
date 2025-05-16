@@ -10,7 +10,7 @@ public class EnvWithSpringBootApplication {
 
     public static void main(String[] args) {
         // this need only run in local without Docker
-        File file = new File(".env.prod");
+        /*File file = new File(".env.prod");
         try {
             BufferedReader reader = new BufferedReader(new FileReader(file));
             while (reader.ready()){
@@ -27,7 +27,7 @@ public class EnvWithSpringBootApplication {
             }
         }  catch (IOException e) {
             throw new RuntimeException("Failed to load env file: " + file.getName(), e);
-        }
+        }*/
         SpringApplication.run(EnvWithSpringBootApplication.class, args);
     }
 

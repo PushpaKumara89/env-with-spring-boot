@@ -18,4 +18,4 @@
         }  catch (IOException e) {
             throw new RuntimeException("Failed to load env file: " + file.getName(), e);
         }
-## you should remove this code when running with the docker
+## you should remove this code when you are not going to dockerized
